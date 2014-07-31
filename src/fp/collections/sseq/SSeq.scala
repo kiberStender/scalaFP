@@ -1,4 +1,6 @@
-package collections.sseq
+package fp.collections.sseq
+
+import typeclasses.Monad
 
 trait SSeq[+A] extends Monad[A]{
   def :-:[B >: A](s: B): SSeq[B] = s :-: this
