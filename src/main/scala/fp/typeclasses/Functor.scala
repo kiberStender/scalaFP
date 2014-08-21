@@ -1,5 +1,5 @@
 package fp.typeclasses
 
-trait Functor[A]{
+trait Functor[+A]{
   def map[B]: (A => B) => Functor[B]
 }
